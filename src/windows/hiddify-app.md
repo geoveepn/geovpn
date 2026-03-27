@@ -1,16 +1,9 @@
 # Hiddify App (Windows)
-Установка
-С Microsoft store:
-<br/>
-<a href="https://get.microsoft.com/installer/download/9pdfnl3qv2s5?referrer=appbadge" target="_self" >
-	<img src="https://get.microsoft.com/images/ru%20dark.svg" width="200"/>
-</a>
-<br/>
-Или с релиза на github:
-<br />
-<a href="https://github.com/hiddify/hiddify-app/releases">
-	<img src="https://img.shields.io/github/v/release/hiddify/hiddify-app?style=for-the-badge">
-</a>
+Установка с Microsoft store или с релиза на github:
+
+| Microsoft Store | GitHub Releases |
+|-----------------|-----------------|
+| <a href="https://get.microsoft.com/installer/download/9pdfnl3qv2s5?referrer=appbadge"><img src="https://get.microsoft.com/images/ru%20dark.svg" width="200"/></a> | <a href="https://github.com/hiddify/hiddify-app/releases"><img src="https://img.shields.io/github/v/release/hiddify/hiddify-app?style=for-the-badge"/></a> |
 
 **Гайд по подключению**
 <br/>
@@ -24,6 +17,9 @@
 4. В hiddify нажимаем на большую кнопку в центре
 	<img width="1906" height="1406" alt="image_2026-03-21_08-36-52" src="https://github.com/user-attachments/assets/dec00e23-6d6b-43e3-9724-a109c03d1551" />
 
+https://github.com/user-attachments/assets/6cbca676-6b8c-4407-80b0-e621e649b027
+
+
 ### В hiddify
 1. **Копируем** наш ключ(ссылку на подписку)
 2. В hiddify нажимаем "+" в правом верхнем углу
@@ -34,7 +30,6 @@
 4. Подключемся с помощью большой кнопки в центре
 
 
-https://github.com/user-attachments/assets/b428b986-e705-4f18-9e46-04e3818e6729
 
 
 ### Что тут отображается
