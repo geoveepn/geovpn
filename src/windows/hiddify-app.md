@@ -35,6 +35,7 @@ https://github.com/user-attachments/assets/6cbca676-6b8c-4407-80b0-e621e649b027
 ### Что тут отображается
 Пинг(до сервера vpn):
 	<img width="382" height="333" alt="image_2026-03-21_08-37-26" src="https://github.com/user-attachments/assets/1dda432c-930d-4e73-b219-141e1a19e6de" />
+	<br/>
 Сколько истрачено гигабайт траффика и сколько осталось и сколько осталось до конца подписки:
 	<img width="1189" height="217" alt="image_2026-03-21_08-37-57" src="https://github.com/user-attachments/assets/cc594f77-88d4-4c71-ad93-c293b984d69a" />
 
