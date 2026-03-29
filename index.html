@@ -1,138 +1,242 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GeoVPN</title>
+  <meta charset="UTF-8" />
+  <title>GeoVPN</title>
+  <style>
+    :root {
+      --bg: #1a1b26;
+      --bg-alt: #24283b;
+      --fg: #c0caf5;
+      --accent: #7aa2f7;
+      --accent-soft: #2ac3de;
+      --accent-strong: #bb9af7;
+      --border: #414868;
+      --muted: #565f89;
+      --badge-bg: #1e2030;
+    }
 
-<style>
-  body {
-    margin: 0;
-    font-family: "Segoe UI", sans-serif;
-    background: #1a1b26;
-    color: #c0caf5;
-    text-align: center;
-  }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #24283b 0, #1a1b26 45%, #15161e 100%);
+      color: var(--fg);
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
 
-  .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-  }
+    .page {
+      width: 100%;
+      max-width: 960px;
+      padding: 24px 16px 40px;
+    }
 
-  .card {
-    background: #24283b;
-    border-radius: 20px;
-    padding: 25px;
-    box-shadow: 0 0 25px rgba(0, 212, 255, 0.15);
-    margin-bottom: 25px;
-  }
+    .card {
+      background: rgba(26, 27, 38, 0.96);
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+      padding: 24px 20px 28px;
+      backdrop-filter: blur(10px);
+    }
 
-  h1 {
-    color: #00d4ff;
-    margin: 10px 0;
-  }
+    .center {
+      text-align: center;
+    }
 
-  .button {
-    display: inline-block;
-    background: #229ED9;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: 0.3s;
-  }
+    .hero-logo img {
+      display: block;
+      max-width: 100%;
+      border-radius: 16px;
+      border: 1px solid rgba(122, 162, 247, 0.4);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    }
 
-  .button:hover {
-    background: #1C93E3;
-    transform: scale(1.05);
-  }
+    .title-main {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin: 18px 0 8px;
+      background: linear-gradient(120deg, #2ac3de, #7aa2f7, #bb9af7);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
 
-  .guides {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
+    .subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0 0 10px;
+    }
 
-  .guide-item {
-    background: #1f2335;
-    padding: 15px;
-    border-radius: 15px;
-    width: 120px;
-    transition: 0.3s;
-  }
+    .btn-telegram {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 22px;
+      border-radius: 999px;
+      border: 1px solid rgba(34, 158, 217, 0.7);
+      background: radial-gradient(circle at 0 0, rgba(42, 195, 222, 0.35), rgba(26, 27, 38, 0.95));
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      box-shadow: 0 10px 24px rgba(34, 158, 217, 0.45);
+      transition: 0.12s ease-out;
+    }
 
-  .guide-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(0,212,255,0.3);
-  }
+    .btn-telegram:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(34, 158, 217, 0.6);
+    }
 
-  img {
-    max-width: 100%;
-    border-radius: 15px;
-  }
+    .badge-row {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
 
-  .typing {
-    margin-bottom: 15px;
-  }
+    .badge {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--badge-bg);
+      border: 1px solid rgba(65, 72, 104, 0.9);
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
 
-  .footer {
-    margin-top: 20px;
-  }
-</style>
+    .section-title {
+      margin: 0 0 18px;
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent-soft);
+    }
+
+    .guides-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 0 auto 10px;
+      max-width: 520px;
+    }
+
+    .guide-item {
+      text-align: center;
+      padding: 14px 10px 12px;
+      border-radius: 16px;
+      background: linear-gradient(145deg, rgba(36, 40, 59, 0.95), rgba(26, 27, 38, 0.98));
+      border: 1px solid rgba(65, 72, 104, 0.9);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
+      transition: 0.12s ease-out;
+    }
+
+    .guide-item:hover {
+      transform: translateY(-3px);
+      border-color: rgba(122, 162, 247, 0.9);
+    }
+
+    .guide-item img {
+      width: 70px;
+      height: 70px;
+      border-radius: 14px;
+      margin-bottom: 8px;
+    }
+
+    /* Фоновый footer */
+    .footer-bg {
+      width: 100%;
+      height: 220px;
+      border-radius: 18px;
+      border: 1px solid rgba(65, 72, 104, 0.9);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7);
+      background-image: url("https://github.com/user-attachments/assets/b8c2319a-da4d-4bc1-a3c1-c52bb046bd44");
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 640px) {
+      .guides-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 420px) {
+      .guides-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="page">
 
-<div class="container">
+    <div class="card center">
+      <a href="https://t.me/geoveepn" class="hero-logo">
+        <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1000&pause=1000&center=true&width=435&lines=%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF+%D0%BA+chatgpt%2C+telegram%2C+youtube;%D1%81%D1%82%D0%B0%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE+%D0%BD%D0%B8%D0%B7%D0%BA%D0%B8%D0%B9+%D0%BF%D0%B8%D0%BD%D0%B3;%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE+5+%D0%B3%D0%B1;%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5+%D1%81+%D0%BB%D1%8E%D0%B1%D0%BE%D0%B3%D0%BE+%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0" />
+      </a>
 
-  <div class="card">
-    <a href="https://t.me/geoveepn">
-      <img class="typing" src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=1000&pause=1000&center=true&width=435&lines=доступ+к+chatgpt,+telegram,+youtube;стабильно+низкий+пинг;бесплатно+5+гб;подключение+с+любого+устройства">
-    </a>
-
-    <a href="https://t.me/geoveepn">
-      <img src="https://github.com/user-attachments/assets/778c6eec-e1ff-4eb1-aef5-e6aa1b91301e">
-    </a>
-
-    <h1>GeoVPN</h1>
-
-    <a href="https://t.me/geoveepn" class="button">
-      Открыть в Telegram
-    </a>
-  </div>
-
-  <div class="card">
-    <h2 style="color:#00e5ff;">Гайды</h2>
-
-    <div class="guides">
-
-      <div class="guide-item">
-        <img src="https://github.com/user-attachments/assets/e6eeaeef-0bf3-43a7-8598-f2accb6d0fb8" width="60">
-        <p>Android</p>
+      <div style="margin-top: 18px;">
+        <a href="https://t.me/geoveepn">
+          <img src="https://github.com/user-attachments/assets/778c6eec-e1ff-4eb1-aef5-e6aa1b91301e"
+               alt="GeoVPN логотип"
+               style="max-width: 260px; width: 100%; border-radius: 18px; border: 1px solid rgba(65,72,104,0.9);" />
+        </a>
       </div>
 
-      <div class="guide-item">
-        <img src="https://github.com/user-attachments/assets/dca21132-8674-4300-aab1-16fef7c314f13" width="60">
-        <p>Windows</p>
-      </div>
+      <h1 class="title-main">GeoVPN</h1>
+      <p class="subtitle">Доступ к ChatGPT, Telegram, YouTube и другим сервисам с низким пингом и удобным подключением.</p>
 
-      <div class="guide-item">
-        <img src="https://github.com/user-attachments/assets/53dd7339-5e4e-49b4-9ef7-3ec60b84e8ca" width="60">
-        <p>iOS</p>
-      </div>
+      <a href="https://t.me/geoveepn" class="btn-telegram">Открыть в Telegram</a>
 
+      <div class="badge-row">
+        <div class="badge">Бесплатно 5 ГБ</div>
+        <div class="badge">Низкий пинг</div>
+        <div class="badge">Любые устройства</div>
+      </div>
     </div>
+
+    <div class="card">
+      <img 
+        src="https://readme-typing-svg.demolab.com?font=Comfortaa&weight=700&size=27&duration=1&pause=1000&color=00E5FFFA&center=true&vCenter=true&width=435&lines=%D0%93%D0%B0%D0%B9%D0%B4%D1%8B"
+        alt="Гайды"
+        style="display:block; margin:0 auto 18px;"
+      />
+
+      <h2 class="section-title">Гайды по установке</h2>
+
+      <div class="guides-grid">
+        <a href="#" class="guide-item">
+          <img src="https://github.com/user-attachments/assets/e6eeaeef-0bf3-43a7-8598-f2accb6d0fb8" alt="Android" />
+          <div>Android</div>
+        </a>
+
+        <a href="#" class="guide-item">
+          <img src="https://github.com/user-attachments/assets/dca21132-8674-4300-aab1-16fefc314f13" alt="Windows" />
+          <div>Windows</div>
+        </a>
+
+        <a href="#" class="guide-item">
+          <img src="https://github.com/user-attachments/assets/53dd7339-5e4e-49b4-9ef7-3ec60b84e8ca" alt="iOS" />
+          <div>iOS</div>
+        </a>
+      </div>
+
+      <div class="footer-bg"></div>
+    </div>
+
   </div>
-
-  <div class="footer">
-    <img src="https://github.com/user-attachments/assets/b8c2319a-da4d-4bc1-a3c1-c52bb046bd44">
-  </div>
-
-</div>
-
 </body>
 </html>
