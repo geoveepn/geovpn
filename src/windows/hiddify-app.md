@@ -11,11 +11,12 @@
 ### Кнопкой со страцы
 1. Открываем ссылку(ключ) на подписку в браузере
 2. Нажимаем на кнопку подключения в центре
-	<img width="1678" height="1662" alt="image_2026-03-21_08-31-38" src="https://github.com/user-attachments/assets/fe80e1a0-d456-49da-8750-2bdf461f152a" />
+	<img width="2054" height="1498" alt="image" src="https://github.com/user-attachments/assets/53888a7d-152d-46a4-ac9a-c8843651d940" />
 3. Нажимаем "разрешить открыть hiddify"
-	<img width="1430" height="624" alt="image_2026-03-21_08-43-49" src="https://github.com/user-attachments/assets/2df80ad4-745b-4bf2-b9f3-4e9c31743e5c" />
+	<img width="1430" height="624" alt="image" src="https://github.com/user-attachments/assets/86194f54-a6ac-4493-aeb3-bfe9b0be7b31" />
 4. В hiddify нажимаем на большую кнопку в центре
-	<img width="1906" height="1406" alt="image_2026-03-21_08-36-52" src="https://github.com/user-attachments/assets/dec00e23-6d6b-43e3-9724-a109c03d1551" />
+	<img width="1906" height="1406" alt="image" src="https://github.com/user-attachments/assets/0b9d41be-101d-43dd-a231-9968a5fcb542" />
+
 
 https://github.com/user-attachments/assets/6cbca676-6b8c-4407-80b0-e621e649b027
 
@@ -23,21 +24,19 @@ https://github.com/user-attachments/assets/6cbca676-6b8c-4407-80b0-e621e649b027
 ### В hiddify
 1. **Копируем** наш ключ(ссылку на подписку)
 2. В hiddify нажимаем "+" в правом верхнем углу
-	<img width="1890" height="1450" alt="image_2026-03-21_08-31-10" src="https://github.com/user-attachments/assets/ec5e8ad6-42ef-4754-af3b-518ce7e313c6" />
-
+	<img width="1890" height="1450" alt="image" src="https://github.com/user-attachments/assets/72ea4656-5488-446e-9df4-47f9d629540b" />
 3. Нажимаем "буффер обмена"
-	<img width="1920" height="1434" alt="image_2026-03-21_08-36-35" src="https://github.com/user-attachments/assets/d1ff0fa3-999f-44e5-9279-18d900231664" />
+	<img width="1920" height="1434" alt="image" src="https://github.com/user-attachments/assets/d2f3f607-32f9-4f66-8520-51f56a766872" />
 4. Подключемся с помощью большой кнопки в центре
-
-
+	<img width="1906" height="1406" alt="image" src="https://github.com/user-attachments/assets/5dc92666-c081-4732-abe4-fc3dfe0ebeda" />
 
 
 ### Что тут отображается
 Пинг(до сервера vpn):
-	<img width="382" height="333" alt="image_2026-03-21_08-37-26" src="https://github.com/user-attachments/assets/1dda432c-930d-4e73-b219-141e1a19e6de" />
+	<img width="382" height="333" alt="image" src="https://github.com/user-attachments/assets/9d133163-813b-40f2-968b-597acfdf4d22" />
 	<br/>
 Сколько истрачено гигабайт траффика и сколько осталось и сколько осталось до конца подписки:
-	<img width="1189" height="217" alt="image_2026-03-21_08-37-57" src="https://github.com/user-attachments/assets/cc594f77-88d4-4c71-ad93-c293b984d69a" />
+	<img width="1189" height="217" alt="image" src="https://github.com/user-attachments/assets/018c9258-97b6-4a97-9376-f3ce8bea294a" />
 
 > [!WARNING]
 > **Обновляйте Hiddify до самой последней версии** (например, через Microsoft Store).
