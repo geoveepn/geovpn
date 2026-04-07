@@ -2,8 +2,9 @@
 Для компьютеров с windows в основном используется hiddify, а так есть еще несколько приложений:
 
 - [Hiddify](https://github.com/geoveepn/geoveepn.github.io/blob/main/src/windows/hiddify-app.md)
-  <img width="100" alt="Stylized &#39;H&#39; icon with neon glow" src="https://github.com/user-attachments/assets/3279bea0-a2b9-405a-ace5-32a06aac8678" />
+  <img width="200" alt="hiddify" src="https://github.com/user-attachments/assets/3279bea0-a2b9-405a-ace5-32a06aac8678" />
 - v2rayN
+  <img width="200" alt="v2rayn" src="https://github.com/user-attachments/assets/79711d08-24a6-40e4-84f3-5629a6ab7ca9" />
 - Clash Verge
 - Mihomo Party 
 
